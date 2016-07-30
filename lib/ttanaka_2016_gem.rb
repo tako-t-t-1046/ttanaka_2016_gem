@@ -10,7 +10,7 @@ module Ttanaka2016Gem
     # calculate GCD
     def culc_GCD(num1, num2)
       if num1 < num2
-        temp = num1
+	temp = num1
 	num1 = num2
 	num2 = temp
       end
@@ -24,5 +24,9 @@ module Ttanaka2016Gem
       return num1
     end
 
+    # calculate LCM
+    def culc_LCM(num1, num2)
+      num1 * num2 / culc_GCD(num1, num2)
+    end
   end
 end
