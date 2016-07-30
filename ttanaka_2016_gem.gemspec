@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "ttanaka_2016_gem"
   spec.version       = Ttanaka2016Gem::VERSION
   spec.authors       = ["None"]
-  spec.email         = ["tako.t.t.1046@gmail.com"]
+  spec.email         = ["extend71@gmail.com"]
 
   spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
   spec.description   = %q{TODO: Write a longer description or delete this line.}
