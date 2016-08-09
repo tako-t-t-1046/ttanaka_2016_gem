@@ -28,5 +28,19 @@ module Ttanaka2016Gem
     def culc_LCM(num1, num2)
       num1 * num2 / culc_GCD(num1, num2)
     end
+
+    def prime(n)
+      if n <= 1
+        return false
+      end
+      num = 2
+      n.times do
+        if ((n % num) == 0 && (n != num))
+          return false
+        end
+        num = num + 1
+      end
+      return true
+    end
   end
 end

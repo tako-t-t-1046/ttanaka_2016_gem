@@ -5,7 +5,19 @@ class Ttanaka2016GemTest < Minitest::Test
     refute_nil ::Ttanaka2016Gem::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def setup
+    @main = ::Ttanaka2016Gem::Main.new
+  end
+
+  def test_prime
+    assert_equal false, @main.prime(-1), '-1 is not prime'
+    assert_equal false, @main.prime(0), '0 is not prime'
+    assert_equal false, @main.prime(1), '1 is not prime'
+    assert_equal true, @main.prime(2), '2 is prime'
+    assert_equal true, @main.prime(3), '3 is prime'
+    assert_equal false, @main.prime(10), '10 is not prime'
+    assert_equal true, @main.prime(11), '11 is prime'
+    assert_equal false, @main.prime(10036), '10036 is not prime'
+    assert_equal true, @main.prime(10037), '10037 is prime'
   end
 end
