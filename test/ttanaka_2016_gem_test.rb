@@ -31,4 +31,13 @@ class Ttanaka2016GemTest < Minitest::Test
     assert_equal( 40,@Main.calc_LCM(20, 40), 'LCM_2')
     assert_equal(391,@Main.calc_LCM(23, 17), 'LCM_3')
   end
+
+  def test_get_prime_list
+    assert_equal [], @main.get_prime_list(-1), 'not exist prime'
+    assert_equal [], @main.get_prime_list(0), 'not exist prime'
+    assert_equal [], @main.get_prime_list(1), 'not exist prime'
+    assert_equal [2], @main.get_prime_list(2), 'exist prime'
+    assert_equal [2, 3, 5, 7], @main.get_prime_list(10), 'exist prime'
+    assert_equal [2, 3, 5, 7, 11], @main.get_prime_list(11), 'exist prime'
+  end
 end
