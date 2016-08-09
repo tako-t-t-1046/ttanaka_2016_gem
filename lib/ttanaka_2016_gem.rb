@@ -8,7 +8,7 @@ module Ttanaka2016Gem
     end
 
     # calculate GCD
-    def culc_GCD(num1, num2)
+    def calc_GCD(num1, num2)
       if num1 < num2
 	temp = num1
 	num1 = num2
@@ -25,8 +25,8 @@ module Ttanaka2016Gem
     end
 
     # calculate LCM
-    def culc_LCM(num1, num2)
-      num1 * num2 / culc_GCD(num1, num2)
+    def calc_LCM(num1, num2)
+      num1 * num2 / calc_GCD(num1, num2)
     end
 
     def prime(n)

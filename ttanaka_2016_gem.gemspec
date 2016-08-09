@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Takashi Tanaka", "Takeshi Moriai"]
   spec.email         = ["tako.t.t.1046@mail.com", "extend71@gmail.com"]
 
-  spec.summary       = %q{Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{Write a longer description or delete this line.}
+  spec.summary       = %q{This gem is calculate GCD, LCM, Prime.}
+  spec.description   = %q{This gem is calculate GCD, LCM, Prime. Please read Wiki Page.}
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
