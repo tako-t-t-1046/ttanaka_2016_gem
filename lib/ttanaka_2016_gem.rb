@@ -42,5 +42,16 @@ module Ttanaka2016Gem
       end
       return true
     end
+
+    def get_prime_list(n)
+      ret = Array.new
+      n = n + 1
+      n.times do |i|
+        if prime(i) == true
+          ret.push(i)
+        end
+      end
+      return ret
+    end
   end
 end

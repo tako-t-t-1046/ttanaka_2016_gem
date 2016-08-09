@@ -20,4 +20,13 @@ class Ttanaka2016GemTest < Minitest::Test
     assert_equal false, @main.prime(10036), '10036 is not prime'
     assert_equal true, @main.prime(10037), '10037 is prime'
   end
+
+  def test_get_prime_list
+    assert_equal [], @main.get_prime_list(-1), 'not exist prime'
+    assert_equal [], @main.get_prime_list(0), 'not exist prime'
+    assert_equal [], @main.get_prime_list(1), 'not exist prime'
+    assert_equal [2], @main.get_prime_list(2), 'exist prime'
+    assert_equal [2, 3, 5, 7], @main.get_prime_list(10), 'exist prime'
+    assert_equal [2, 3, 5, 7, 11], @main.get_prime_list(11), 'exist prime'
+  end
 end
