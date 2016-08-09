@@ -5,6 +5,10 @@ class Ttanaka2016GemTest < Minitest::Test
     refute_nil ::Ttanaka2016Gem::VERSION
   end
 
+  def setup
+    @main = ::Ttanaka2016Gem::Main.new
+  end
+
   def test_GCD
     assert_equal(15,@Main.calc_GCD(30, 45), 'GCD_1')
     assert_equal(20,@Main.calc_GCD(20, 40), 'GCD_2')
